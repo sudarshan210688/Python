@@ -1,0 +1,80 @@
+# variable will be declared without any data type , type method matches the datatype #
+# Each variable in phyton refers to an "Object" no there is no predefined datatype while declaration 
+a=5
+b=6.56
+c="darsha" #when a value is declared for a variable  with in "" is considered as String #
+d='a'  # when a value is declared for a variable  with in '' it is considered as String #
+sum = a+b
+#print(a,c,sum) --> print is to print the value in the console
+# System.out.println("Hellloo"+a);  ---> java syntax
+#type method specifies the datatype of the variable and using  ',' to concatenate
+
+print(a);
+print("Prints the data type of the a -->" ,type(a))
+print("Prints the data type of the b -->" ,type(b))
+print("Prints the data type of the c -->" ,type(c))
+print("Prints the data type of the d -->" ,type(d))
+print("Prints the data type of the d -->" ,a)
+
+#Type casting #
+
+print(float(a))
+print(int(b))
+
+
+
+# Learning Arrays --Araays are known as list in Phyton #
+#Allows same variable name to be declared for multiple data type --> It can save memory #
+
+a=[1,2,3,4,5,1,1] #Integer array
+print(a)
+print(type(a))
+print(a[0])
+b=["sudar","sha","darshan"]
+print(b)
+print(type(b))
+print("sudar" in b) #Verify if an element present in list(array)
+print(b[1])
+c=['c','d','e','f']
+print(c)
+print(type(c))
+print(c[3])
+d=a+b+c   # concatenating 3 lists a,b,c
+print(d)
+
+# Methods in List #
+print(a.count(1))  #count of an element in an array/list
+a.sort() # sort elements of an  array/list in ascending order
+print(a)
+a.reverse() # reverse the elements in list/array
+print(a)
+a.append(9) # add elements in list/array
+print(a)
+print(len(a)) # print the length of an list/array
+#del(a)  ----> delete the lis/array
+a.pop() # Remove last element from an array /list
+print(a)
+
+
+#Allows any datatype (say string,Integer etc) inside the array 
+e= ["hey","you",1,2,3,"go",1.53]
+print(e)
+print("Index of elements array ----->",e[1],e[2],e[6])
+
+#Tuples (Similar to list orderly fashion and immutable( not changeable))
+f=("saya","sudar","darshan") #tuple should be declared in paranthesis
+print(f)
+print("Tuple length is ----------->" ,len(f))
+print(f[2])
+print("saya" in f) #Verify if an element present in tuple
+#print("say" in f) #Verify if an element present in tuple
+"saya" in f
+print("saya is present in f ")
+t1=("s","a","y","a")
+t2=(1,2,3,4)
+t3=(t1,t2)
+t3=t1+t2 # concatenating 2 tuples t1 and t2
+#del(t3) # deleting a tuple
+print("concatenating 2 tuples t1 and t2",t3)
+print("Last Item in the tuple ---->",t3[-1])  # to print the last item in the tuple
+print("Second Last Item in the tuple ---->",t3[-2])  # to print the second last item in the tuple
